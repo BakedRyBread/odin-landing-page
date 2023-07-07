@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SGalexy Landing Page</title>
+  <link href="https://fonts.cdnfonts.com/css/distant-galaxy" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    @import url('https://fonts.cdnfonts.com/css/distant-galaxy');
+  </style>
+
+</head>
+<body>
+  <div id="video-container">
+    <video id="video-background" autoplay loop muted>
+      <source src="resources/nebula.mp4" type="video/mp4">
+    </video>
+  </div>
+  <header>
+    <div class="logo">
+      <a href="">Enterprise Rent-A-Ship</a>
+    </div>
+    <nav>
+      <a href="#">Planets</a>
+      <a href="#">Moons</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+ 
+  <div class="hero">
+    <div class="hero-left">
+      <h1 class="hero-title">Milky Way Getaway</h1>
+      <p class="hero-subtext">Embark on a celestial adventure through the planets, moons, and cosmic phenomena. Book your intergalactic trip today!</p>
+      <button>Book a trip!</button>
+    </div>
+    <img class="hero-image" src="resources/solarSystem.webp" alt="Hero Image">
+  </div>
+ 
+  <section class="info-cards">
+    <div class="info-card">
+      <h2>Earth</h2>
+      <p>And it's silly little humans</p>
+    </div>
+    <div class="info-card">
+      <h2>Mars</h2>
+      <p>And it's terraform potential</p>
+    </div>
+    <div class="info-card">
+      <h2>Jupiter</h2>
+      <p>And it's raging storms</p>
+    </div>
+    <div class="info-card">
+      <h2>Saturn</h2>
+      <p>and it's beautiful rings</p>
+    </div>
+  </section>
+ 
+  <section class="quote-section">
+    <div class="quote">"The Earth is the cradle of humanity, but mankind cannot stay in the cradle forever"</div>
+    <div class="author">- Konstantin Tsiolkovsky</div>
+  </section>
+ 
+  <section class="action-section">
+    <div class="action-left">
+      <h2>Galactic sized deals!</h2>
+      <p>Subscribe to our newsletter to find out more!</p>
+    </div> 
+    <div class="action-right">
+      <button>Subscribe</button>
+    </div> 
+  </section>
+
+  <footer>
+    Copyright  &middot;  The Odin Project 2021
+  </footer>
+  <script>
+    const video = document.getElementById('video-background');
+ 
+    video.addEventListener('ended', function () {
+      video.currentTime = 0; // Reset the video to the beginning
+      video.play(); // Start playing the video again
+    });
+  </script>
+</body>
+</html>
